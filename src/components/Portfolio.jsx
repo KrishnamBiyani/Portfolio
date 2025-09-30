@@ -50,21 +50,21 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <div className="min-h-screen bg-custom-bg text-white font-sans px-6 py-10">
-      <div className="max-w-2xl mx-auto">
+    <div className="min-h-screen text-white font-sans px-4 sm:px-6 py-8 sm:py-10 relative">
+      <div className="max-w-2xl mx-auto relative z-10">
         <Header />
         <Bio />
 
         <Section title="Work Highlights" delay={0.5}>
           {experiences.map((exp, idx) => (
-            <ExperienceItem key={idx} {...exp} />
+            <ExperienceItem key={idx} {...exp} index={idx} />
           ))}
         </Section>
 
         <Section title="Projects" delay={0.7}>
-          <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 lg:gap-x-16 gap-y-6 sm:gap-y-8 mt-6">
             {projects.map((proj, idx) => (
-              <ProjectItem key={idx} {...proj} />
+              <ProjectItem key={idx} {...proj} index={idx} />
             ))}
           </div>
         </Section>

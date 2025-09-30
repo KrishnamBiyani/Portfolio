@@ -24,36 +24,30 @@ export default function Header() {
           <span>Bengaluru, India</span>
         </p>
         <div className="flex gap-4 mt-2 text-xl">
-          <motion.a
+          <a
             href="https://www.linkedin.com/in/krishnam-biyani-707070278/"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-[#0077B5] transition-colors duration-200"
-            whileHover={{ scale: 1.1, y: -2 }}
-            whileTap={{ scale: 0.95 }}
+            className="hover:text-custom-blue"
           >
             <FaLinkedin />
-          </motion.a>
-          <motion.a
+          </a>
+          <a
             href="https://github.com/KrishnamBiyani"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-[#6e5494] transition-colors duration-200"
-            whileHover={{ scale: 1.1, y: -2 }}
-            whileTap={{ scale: 0.95 }}
+            className="hover:text-custom-gray"
           >
             <FaGithub />
-          </motion.a>
-          <motion.a
+          </a>
+          <a
             href="https://leetcode.com/u/krishnam_biyani/"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-[#FFA116] transition-colors duration-200"
-            whileHover={{ scale: 1.1, y: -2 }}
-            whileTap={{ scale: 0.95 }}
+            className="hover:text-[#FFA116]"
           >
             <SiLeetcode />
-          </motion.a>
+          </a>
         </div>
       </div>
     </motion.div>
