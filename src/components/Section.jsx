@@ -64,11 +64,11 @@ export default function Section({ title, delay, children }) {
     >
       <motion.h2
         variants={sectionLadderVariants}
-        className="heading-secondary border-b border-custom-border pb-3"
+        className="heading-secondary border-b border-white/20 pb-3 mb-6 text-white/90"
       >
         {title}
       </motion.h2>
-      <motion.div variants={contentVariants} className="mt-4">
+      <motion.div variants={contentVariants} className="mt-0">
         {children}
       </motion.div>
     </motion.section>

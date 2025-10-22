@@ -41,20 +41,22 @@ export default function Bio() {
   };
 
   return (
-    <motion.p
+    <motion.div
       variants={bioLadderVariants}
       initial="hidden"
       animate="visible"
-      className="mt-4 body-text leading-[1.6]"
+      className="mt-6 p-6 rounded-xl bg-white/3 border border-white/5"
       style={{
         perspective: "1000px",
         transformStyle: "preserve-3d",
       }}
     >
-      Full-stack developer crafting real-time, scalable applications — from
-      livestreaming platforms to collaborative coding tools and chat apps.
-      Skilled in React, Tailwind CSS, Node.js, and MongoDB, with experience
-      delivering production-ready projects and client solutions.
-    </motion.p>
+      <p className="body-text leading-[1.7] text-gray-100">
+        Full-stack developer crafting real-time, scalable applications — from
+        livestreaming platforms to collaborative coding tools and chat apps.
+        Skilled in React, Tailwind CSS, Node.js, and MongoDB, with experience
+        delivering production-ready projects and client solutions.
+      </p>
+    </motion.div>
   );
 }

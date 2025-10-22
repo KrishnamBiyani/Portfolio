@@ -82,7 +82,7 @@ const projects = [
 export default function Portfolio() {
   return (
     <div className="min-h-screen text-white font-sans px-4 sm:px-6 py-8 sm:py-10 relative">
-      <div className="max-w-2xl mx-auto relative z-10">
+      <div className="max-w-4xl mx-auto relative z-10 p-8 sm:p-10 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
         <Header />
         <Bio />
 
@@ -93,7 +93,7 @@ export default function Portfolio() {
         </Section>
 
         <Section title="Projects" delay={0.7}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 lg:gap-x-16 gap-y-6 sm:gap-y-8 mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 lg:gap-x-8 gap-y-6 sm:gap-y-8 mt-6">
             {projects.map((proj, idx) => (
               <ProjectItem key={idx} {...proj} index={idx} />
             ))}

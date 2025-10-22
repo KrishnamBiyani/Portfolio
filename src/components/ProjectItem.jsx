@@ -51,11 +51,17 @@ export default function ProjectItem({
       variants={ladderVariants}
       initial="hidden"
       animate="visible"
-      className="mb-6"
+      className="mb-6 p-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm"
       style={{
         perspective: "1000px",
         transformStyle: "preserve-3d",
       }}
+      whileHover={{ 
+        y: -8, 
+        scale: 1.02,
+        transition: { duration: 0.3, ease: "easeOut" }
+      }}
+      whileTap={{ scale: 0.98 }}
     >
       <div className="h-full flex flex-col">
         <h3 className="heading-tertiary">{title}</h3>

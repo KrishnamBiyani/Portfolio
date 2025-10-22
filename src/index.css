@@ -19,15 +19,15 @@
   --tracking-tight: -0.015em;
   --tracking-wide: 0.025em;
 
-  --text-base: 14px;
-  --leading-base: 20px;
-  --text-sm: 12px;
-  --leading-sm: 18px;
-  --text-lg: 15px;
-  --leading-lg: 22px;
-  --text-xl: 18px;
-  --leading-xl: 26px;
-  --text-2xl: 24px;
+  --text-base: 15px;
+  --leading-base: 22px;
+  --text-sm: 13px;
+  --leading-sm: 19px;
+  --text-lg: 17px;
+  --leading-lg: 24px;
+  --text-xl: 20px;
+  --leading-xl: 28px;
+  --text-2xl: 26px;
   --leading-2xl: 32px;
   --text-3xl: 28px;
   --leading-3xl: 36px;
@@ -141,7 +141,7 @@ h3, .heading-tertiary {
 }
 
 .subheading {
-  font-size: 11px;
+  font-size: 12px;
   line-height: var(--leading-sm);
   font-weight: 400;
   letter-spacing: var(--tracking-wide);
@@ -152,12 +152,12 @@ h3, .heading-tertiary {
 
 @media (min-width: 640px) {
   .subheading {
-    font-size: var(--text-sm);
+    font-size: 13px;
   }
 }
 
 .body-text {
-  font-size: 13px;
+  font-size: 14px;
   line-height: var(--leading-base);
   font-weight: 300;
   color: var(--color-custom-gray);
@@ -165,7 +165,7 @@ h3, .heading-tertiary {
 
 @media (min-width: 640px) {
   .body-text {
-    font-size: var(--text-base);
+    font-size: 15px;
   }
 }
 
