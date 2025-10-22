@@ -1,5 +1,11 @@
 import { motion } from "framer-motion";
-import { FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaGlobe,
+  FaEnvelope,
+  FaFileAlt,
+} from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { IoLocationSharp } from "react-icons/io5";
 import profilePic from "../assets/profile.jpg";
@@ -53,6 +59,24 @@ export default function Header() {
             whileTap={{ scale: 0.95 }}
           >
             <SiLeetcode />
+          </motion.a>
+          <motion.a
+            href="mailto:krishnambiyani5@gmail.com"
+            className="hover:text-[#D44638] transition-colors duration-200"
+            whileHover={{ scale: 1.1, y: -2 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <FaEnvelope />
+          </motion.a>
+          <motion.a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-[#4285F4] transition-colors duration-200"
+            whileHover={{ scale: 1.1, y: -2 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <FaFileAlt />
           </motion.a>
         </div>
       </div>

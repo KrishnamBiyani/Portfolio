@@ -24,23 +24,23 @@ export default function ProjectItem({
       transformOrigin: "top center",
       transition: {
         duration: 0.8,
-        delay: 0.8, // Both project cards animate at the same time
+        delay: 0.8 + index * 0.1, // Stagger the 4 projects with 0.1s between each
         ease: [0.68, -0.55, 0.265, 1.55], // Bouncy, jittery easing
         times: [0, 0.3, 0.7, 1],
-        opacity: { duration: 0.4, delay: 0.8 },
+        opacity: { duration: 0.4, delay: 0.8 + index * 0.1 },
         rotateX: {
           duration: 0.6,
-          delay: 0.8,
+          delay: 0.8 + index * 0.1,
           ease: [0.68, -0.55, 0.265, 1.55],
         },
         y: {
           duration: 0.8,
-          delay: 0.8,
+          delay: 0.8 + index * 0.1,
           ease: [0.68, -0.55, 0.265, 1.55],
         },
         filter: {
           duration: 0.5,
-          delay: 1.1, // 0.8 + 0.3 for consistent timing
+          delay: 0.8 + index * 0.1 + 0.3, // Stagger filter effect with base delay
         },
       },
     },
@@ -57,12 +57,12 @@ export default function ProjectItem({
         transformStyle: "preserve-3d",
       }}
     >
-      <div>
+      <div className="h-full flex flex-col">
         <h3 className="heading-tertiary">{title}</h3>
         {subtitle && <p className="subheading mt-1">{subtitle}</p>}
-        <p className="body-text mt-3 leading-relaxed">{desc}</p>
+        <p className="body-text mt-3 leading-relaxed flex-grow">{desc}</p>
         {links?.length > 0 && (
-          <div className="flex gap-4 mt-3">
+          <div className="flex gap-4 mt-4 pt-2">
             {links.map((link, i) => (
               <motion.a
                 key={i}

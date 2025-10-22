@@ -19,13 +19,32 @@ const experiences = [
       },
     ],
   },
+  {
+    title: "TimeSlotter",
+    subtitle:
+      "Full-stack Developer Intern • Vellore (Remote) • May 2024 – June 2024",
+    desc: "Designed RESTful APIs with Node.js and Express for user management and bookings. Implemented JWT authentication and optimized MongoDB schemas for better performance.",
+    links: [],
+  },
 ];
 
 const projects = [
   {
+    title: "Social Media Backend",
+    subtitle: "Microservices Architecture",
+    desc: "Distributed backend with 4 microservices, API Gateway, and JWT authentication. Event-driven system using RabbitMQ and Redis caching for performance optimization.",
+    links: [
+      {
+        icon: <FaGlobe size={14} />,
+        text: "Project Link",
+        url: "https://github.com/KrishnamBiyani/social-media-microservices",
+      },
+    ],
+  },
+  {
     title: "StreamHub",
     subtitle: "Browser-based Livestreaming",
-    desc: "Livestream to YouTube & HLS using MediaRecorder, FFmpeg, and Docker.",
+    desc: "Full-stack livestreaming platform with React frontend and Node.js backend. Features real-time video processing using FFmpeg and Docker containerization.",
     links: [
       {
         icon: <FaGlobe size={14} />,
@@ -37,12 +56,24 @@ const projects = [
   {
     title: "DSA Duel",
     subtitle: "Real-time Competitive Coding",
-    desc: "Coding duel platform with MERN, Socket.IO, and Judge0 API.",
+    desc: "Real-time competitive coding platform with MERN stack. Features live coding battles, Judge0 API integration, and Socket.IO for real-time collaboration.",
     links: [
       {
         icon: <FaGlobe size={14} />,
         text: "Project Link",
         url: "https://code-duel-m582.onrender.com/",
+      },
+    ],
+  },
+  {
+    title: "Chatty",
+    subtitle: "Realtime Chat Application",
+    desc: "Full-stack chat application with real-time messaging via Socket.IO. Features JWT authentication, themeable UI with 32+ themes, and Cloudinary image uploads.",
+    links: [
+      {
+        icon: <FaGlobe size={14} />,
+        text: "Project Link",
+        url: "https://fullstack-chat-app-wjuo.onrender.com/",
       },
     ],
   },
