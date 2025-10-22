@@ -56,7 +56,7 @@ export default function Section({ title, delay, children }) {
     <motion.section
       initial="hidden"
       animate="visible"
-      className="mt-6 first:mt-3"
+      className="mt-4 sm:mt-6 first:mt-2 sm:first:mt-3"
       style={{
         perspective: "1000px",
         transformStyle: "preserve-3d",
@@ -64,7 +64,7 @@ export default function Section({ title, delay, children }) {
     >
       <motion.h2
         variants={sectionLadderVariants}
-        className="heading-secondary border-b border-white/20 pb-3 mb-6 text-white/90"
+        className="heading-secondary border-b border-white/20 pb-2 sm:pb-3 mb-4 sm:mb-6 text-white/90"
       >
         {title}
       </motion.h2>

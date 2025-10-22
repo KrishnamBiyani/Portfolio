@@ -45,17 +45,19 @@ export default function Bio() {
       variants={bioLadderVariants}
       initial="hidden"
       animate="visible"
-      className="mt-6 p-6 rounded-xl bg-white/3 border border-white/5"
+      className="mt-4 sm:mt-6 p-4 sm:p-6 rounded-xl bg-white/3 border border-white/5"
       style={{
         perspective: "1000px",
         transformStyle: "preserve-3d",
       }}
     >
-      <p className="body-text leading-[1.7] text-gray-100">
-        Full-stack developer crafting real-time, scalable applications — from
-        livestreaming platforms to collaborative coding tools and chat apps.
-        Skilled in React, Tailwind CSS, Node.js, and MongoDB, with experience
-        delivering production-ready projects and client solutions.
+      <p className="body-text leading-[1.6] sm:leading-[1.7] text-gray-100 text-center sm:text-left">
+        Full-stack developer specializing in microservices architecture and
+        real-time applications. Built distributed systems with RabbitMQ, Redis
+        caching, and Docker containerization. Experience ranges from
+        livestreaming platforms with FFmpeg to competitive coding platforms with
+        real-time collaboration. Proficient in MERN stack, Socket.IO, JWT
+        authentication, and modern deployment practices.
       </p>
     </motion.div>
   );

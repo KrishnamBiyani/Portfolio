@@ -51,24 +51,26 @@ export default function ProjectItem({
       variants={ladderVariants}
       initial="hidden"
       animate="visible"
-      className="mb-6 p-6 rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm"
+      className="mb-4 sm:mb-6 p-4 sm:p-5 lg:p-6 rounded-xl bg-white/3 border border-white/5"
       style={{
         perspective: "1000px",
         transformStyle: "preserve-3d",
       }}
-      whileHover={{ 
-        y: -8, 
-        scale: 1.02,
-        transition: { duration: 0.3, ease: "easeOut" }
+      whileHover={{
+        y: -4,
+        scale: 1.01,
+        transition: { duration: 0.3, ease: "easeOut" },
       }}
       whileTap={{ scale: 0.98 }}
     >
       <div className="h-full flex flex-col">
         <h3 className="heading-tertiary">{title}</h3>
         {subtitle && <p className="subheading mt-1">{subtitle}</p>}
-        <p className="body-text mt-3 leading-relaxed flex-grow">{desc}</p>
+        <p className="body-text mt-2 sm:mt-3 leading-relaxed flex-grow">
+          {desc}
+        </p>
         {links?.length > 0 && (
-          <div className="flex gap-4 mt-4 pt-2">
+          <div className="flex flex-wrap gap-2 sm:gap-4 mt-3 sm:mt-4 pt-2">
             {links.map((link, i) => (
               <motion.a
                 key={i}
