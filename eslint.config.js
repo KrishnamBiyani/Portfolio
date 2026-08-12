@@ -23,7 +23,18 @@ export default defineConfig([
       },
     },
     rules: {
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
+      // Uppercase names are components; ESLint does not see them used in JSX.
+      'no-unused-vars': [
+        'error',
+        { varsIgnorePattern: '^[A-Z_]', argsIgnorePattern: '^[A-Z_]' },
+      ],
+    },
+  },
+  {
+    // Server-side code and tests run on Node, not in the browser.
+    files: ['api/**/*.js', 'lib/**/*.js', 'tests/**/*.js'],
+    languageOptions: {
+      globals: globals.node,
     },
   },
 ])
